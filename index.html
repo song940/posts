@@ -2,13 +2,32 @@
 layout: default
 title: blog
 ---
-<h2>Posts</h2>
-<ul class="posts">
-  {% for post in site.posts %}
-  <li>
-    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section id="hello">
+  <h2>Hello 👋</h2>
+  <p class="headline">I am a software engineer and web developer.
+    I wrote <a href="//github.com/song940">open source</a> software and <a
+      href="//github.com/song940?tab=repositories">apps</a>.</p>
+</section>
+
+<section id="posts">
+  <h2>Posts</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</section>
+
+<hr />
+<section class="subscribe">
+  <h2>Subscribe</h2>
+  <p>Join our occasional newsletter for product launches, availability, job openings, and news:</p>
+  <form action="https://formspree.io/song940@gmail.com" method="post">
+    <input class="input" type="email" id="email" name="email" required placeholder="email address">
+    <button class="button" type="submit">Submit</button>
+  </form>
+</section>

@@ -1,9 +1,9 @@
 # Site settings
-title       : Liu Song's Blog
+title       : Liu Song’s Blog
 author      : Lsong
 email       : blog@lsong.org
 description : Open Source Software & Hardware
-url         : http://blog.lsong.org
+url         : https://blog.lsong.org
 permalink   : /:year/:month/:title.html
 icon        : /img/rocket.png
 # disqus shortname

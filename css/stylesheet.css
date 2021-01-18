@@ -42,6 +42,11 @@
   border-bottom: 1px solid #efefef;
 }
 
+.post-content a {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
 .post-content img {
   width: 100%;
 }
