@@ -17,7 +17,7 @@ title: "You Should Use Right Side USB-C Port"
 ![image.png](/img/activity-monitor-kernel-task.png)
 
 
-一般来说我们找到占用最高的进程，杀掉这个进程，就可以释放 CPU 和内存的占用了，但是这一次，事情并没有按我们设定的剧情发展。我们看到占用最高的是一个叫做 「kernel_task」的进程，凭我多年 ~~搞基 ~~ 搞机的经验来判断，事情没有辣么简单。
+一般来说我们找到占用最高的进程，杀掉这个进程，就可以释放 CPU 和内存的占用了，但是这一次，事情并没有按我们设定的剧情发展。我们看到占用最高的是一个叫做 「kernel_task」的进程，凭我多年 ~~搞基~~ 搞机的经验来判断，事情没有辣么简单。
 
 
 我们需要先了解一下这个「kernel_task」是什么，其实这个进程有点类似 Windows 中的 「Idle Process」，就是说，在 CPU 运行过程中实际上是在时钟频率的周期下不断读取内存中的指令到内核中进行运算，为了保证系统中其他进程也能够分配到 CPU 时间，不至于撑的撑死饿的饿死，导致进程无响应，操作系统会使用时间分片来统一调度。同时为了保证任务空闲时 CPU 不至于满载运行，系统中通常会设计一个 「Idle Process」 来让 CPU 空跑。这个进程在 macOS 里面叫做 「kernel_task」。
@@ -30,17 +30,14 @@ title: "You Should Use Right Side USB-C Port"
 在排查各种变量的过程中突然想到：**最近搬了新工位！**
 ![share.jpg](/img/desktop-photo.jpeg)
 
-<center>
-
 <b>你可能会惊讶，这TM有啥关系！</b>
 
 <p>你还别说，真的有关系，听我来分析一哈！</p>
 
 （音响老师，音乐起🎵）
-  
-![image.png](/img/conan.png)
-</center>
+-
 
+![image.png](/img/conan.png)
 
 <center>
 <b>👇大家注意看这里👇</b>
