@@ -37,8 +37,8 @@ title: "You Should Use Right Side USB-C Port"
 <p>你还别说，真的有关系，听我来分析一哈！</p>
 
 （音响老师，音乐起🎵）
-
-![image.png](../img/conan.png)
+  
+![image.png](/img/conan.png)
 </center>
 
 
