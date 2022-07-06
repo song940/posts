@@ -14,7 +14,7 @@ comments: true
 
 拿到路由后用撬棒打开外壳，找到主板 TTL Pin 的位置，连接好 TTL Adapter 然后插上电源观察 SerialPort 输出:
 
-![](/img/k2/1655227117222057733_2979958008_2.jpg)
+![](/img/k2/router-board-with-ttl.jpg)
 
 但是很遗憾没有任何反应，说明 ROM 中的固件完全损坏，无法正确引导。
 
@@ -26,7 +26,7 @@ comments: true
 
 找到 Flash 芯片的位置，用锡纸覆盖主板，在 Flash 芯片的位置开孔，用热风枪加热直至针脚的焊锡全部融化，使用芯片拔取器小心取下。
 
-![](/img/k2/1655228137704552450_2979958008_2.jpg)
+![](/img/k2/router-board-with-spi-flash.jpg)
 
 用锡纸覆盖是为了避免热风枪 400摄氏度 的高温和风力将其他元器件吹跑...
 
@@ -34,7 +34,7 @@ comments: true
 
 将取下的 Flash 放置到 Programmer 中的对应位置：
 
-![](/img/k2/1655228099259548814_2979958008_2.jpg)
+![](/img/k2/chip-programmer.jpg)
 
 读取后发现原来 ROM 中后面的数据损坏全部为 `0x00` 了，先备份一下以备之后使用 *(因为里面有 WiFi 的 MAC 地址和网络驱动配置信息)*。
 
@@ -44,7 +44,7 @@ comments: true
 
 下载对应版本 <https://breed.hackpascal.net/breed-mt7620-phicomm-psg1208.bin> 并写入到 EEPROM:
 
-![](/img/k2/1655228125885178554_2979958008_2.jpg)
+![](/img/k2/breed-firmware-hex.jpg)
 
 #### Remount flash chip
 
@@ -52,7 +52,7 @@ comments: true
 
 连接 TTL Adapter 上电开机 breed 固件系统进入 boot 流程，并输出信息：
 
-![](/img/k2/1655228155891153708_2979958008_2.jpg)
+![](/img/k2/breed-boot-shell.jpg)
 
 看到这个提示信息说明 Router 中的 Breed firmware 已经正确引导，下面我们只需要正常刷机即可。
 
@@ -62,7 +62,7 @@ Padavan 固件具体我就不详细介绍了，大家可以到论坛查看 http:
 
 固件下载地址：<http://opt.cn2qq.com/padavan/>
 
-![](/img/k2/1655228160479777216_2979958008_2.jpg)
+![](/img/k2/router-booting.jpg)
 
 ## 收工
 
@@ -72,6 +72,6 @@ Padavan 固件具体我就不详细介绍了，大家可以到论坛查看 http:
 
 只要我们了解它的工作原理，并配合工具完全可以修复。
 
-![](/img/k2/1655227106660815365_2979958008_2.jpg)
+![](/img/k2/fix-router-with-solder.jpg)
 
 原谅我混乱的桌面，祝大家玩得开心～

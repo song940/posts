@@ -1,0 +1,27 @@
+{
+  "name": "Liu Song’s Blog",
+  "short_name": "Lsong’s Blog",
+  "description": "Lsong’s weblog, articles, comments and podcasts.",
+  "id": "?type=blog",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000",
+  "background_color": "#efefef",
+  "icons": [
+    {
+      "src": "https://lsong.org/icon-x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://lsong.org/icon-x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "blog"
+  ]
+}

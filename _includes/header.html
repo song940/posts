@@ -1,11 +1,15 @@
 <header class="header">
-  <h1 class="title" title="{{ site.description | strip_html }}" >{{ site.title }}</h1>
+  <a href="/" class="heading" >
+    <img src="https://lsong.org/icon.svg" alt="Logo" class="logo">
+    <h1 title="{{ site.description | strip_html }}" >{{ site.title }}</h1>
+  </a>
   <nav id="navbar" class="nav nav-bar">
     <a href="//lsong.org">home</a>
     <a href="//lsong.org/posts">blog</a>
     <a href="//lsong.org/books">books</a>
     <a href="//lsong.org/music">music</a>
-    <a href="//lsong.org/game">game</a>
+    <a href="//lsong.org/apps.html">apps</a>
+    <x-inbox></x-inbox>
   </nav>
   <hr />
 </header>

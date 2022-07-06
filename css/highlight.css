@@ -2,7 +2,12 @@
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
 
-.highlight  { background: #efefef; overflow: scroll; padding: 0 5px; }
+.highlight {
+  overflow: scroll; 
+  padding: 0 5px;
+  background: var(--code-block-background-color, #efefef);
+}
+
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */

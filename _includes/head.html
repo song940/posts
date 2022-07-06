@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />
   <meta name="description" content="{{ site.description }}">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-title" content="Lsong’s Blog">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="none" />
-
+  <link rel="icon" type="image/png" href="https://lsong.org/icon.png">
+  <link rel="icon" type="image/svg+xml" href="https://lsong.org/icon.svg">
+  <link rel="apple-touch-icon" sizes="128x128"  type="image/png" href="https://lsong.org/icon-x128.png">
+  <link rel="apple-touch-icon" sizes="512x512"  type="image/png" href="https://lsong.org/icon-x512.png">
+  <link rel="manifest" href="/manifest.json">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@song940" />
   <meta name="twitter:creator" content="@song940" />
-
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:description" content="{{ site.description }}" />
-
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/feed.xml' | prepend: site.url }}"/>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" >
   <link rel="stylesheet" href="{{ '/css/stylesheet.css' | prepend: site.baseurl }}" >
-  <script src="//lsong.org/js/application.js" type="module" ></script>
+  <script src="/js/application.js" type="module" ></script>
 </head>

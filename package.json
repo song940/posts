@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "start": "hexo"
-  },
-  "dependencies": {
-    "hexo": "^5.4.0"
-  }
-}
