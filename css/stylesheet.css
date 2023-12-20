@@ -1,5 +1,6 @@
-@import "highlight.css";
 @import "//lsong.org/css/stylesheet.css";
+@import "yue.css";
+@import "highlight.css";
 
 .posts {
   font-size: 20px;
@@ -18,43 +19,6 @@
 .posts li a:hover {
   color: green;
   text-decoration: underline;
-}
-
-.post h1,
-.post h2,
-.post h3,
-.post h4,
-.post h5,
-.post h6 {
-  font-weight: bold;
-  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
-}
-
-.post ol,
-.post ul {
-  padding: 0;
-  margin-left: 1.35em;
-}
-
-.post-content {
-  font-family: sans-serif;
-  border-top: 1px solid #efefef;
-  border-bottom: 1px solid #efefef;
-}
-
-.post-content a {
-  word-wrap: break-word;
-  word-break: break-all;
-}
-
-.post-content img {
-  width: 100%;
-}
-
-.post-content blockquote {
-  margin: 0;
-  padding-left: 10px;
-  border-left: 2px solid #ccc;
 }
 
 .comments {
